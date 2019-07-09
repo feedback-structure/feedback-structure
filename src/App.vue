@@ -9,17 +9,23 @@
 
     <v-content>
       <Button type="100100" />
+      <br>
+      <Feedback value="123456" width="1000" />
+      <Feedback value="123456" width="300" />
+      <Feedback value="123456" />
     </v-content>
   </v-app>
 </template>
 
 <script>
 import Button from './components/feedback/Button'
+import Feedback from './components/feedback/Feedback'
 
 export default {
   name: 'App',
   components: {
-    Button
+    Button,
+    Feedback
   },
   data () {
     return {
