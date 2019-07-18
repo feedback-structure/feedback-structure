@@ -2,30 +2,14 @@
 
 See a working version on [feedback-structure.web.app](https://feedback-structure.web.app)
 
-## Project setup
+## Local development
+
+* Clone this repo
+* Install latest Node and NPM
+
 ```
-yarn install
+npm install
+npm run serve
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Automatic CI is in place using travis. All your updates on the `master` branch will be available at the public url.
