@@ -17,5 +17,5 @@ Automatic CI is in place using travis. All your updates on the `master` branch w
 
 ## TO DO
 
-[ ] Properly display the red lines and arrows on the Feedbacks
-[ ] Have links in the Buttons table to display associated Feedbacks
+- [ ] Properly display the red lines and arrows on the Feedbacks
+- [ ] Have links in the Buttons table to display associated Feedbacks
