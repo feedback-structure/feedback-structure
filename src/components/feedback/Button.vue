@@ -16,13 +16,19 @@
     data: () => ({
       colors: {
         red: "#EE6352",
-        blue: "#1098F7"
+        blue: "#1098F7",
+        green: "#297373",
+        yellow: "#FFAD05"
       }
     }),
     props: {
       type: {
         type: String,
         default: "000000"
+      },
+      color: {
+        type: String,
+        default: 'red'
       },
       width: {
         default: 72
@@ -36,9 +42,11 @@
         return this.width * 6 / 9;
       },
       fills: function () {
+        let primary = (this.color == 'yellow') ? this.colors.yellow : this.colors.red;
+        let secondary = (this.color == 'yellow') ? this.colors.green : this.colors.blue;
         return {
-          "0": this.colors.red,
-          "1": this.colors.blue
+          "0": primary,
+          "1": secondary
         }
       }
     }

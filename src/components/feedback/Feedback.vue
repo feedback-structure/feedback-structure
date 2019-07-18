@@ -49,7 +49,7 @@
     <use :xlink:href="'#' + defs.arrow_left" :x="(coords.x2 + coords.x3) / 2" :y="4.65 * radius" />
     <use :xlink:href="'#' + defs.arrow_right" :x="(coords.x1 + coords.x3) / 2" :y="5.45 * radius" />
 
-    <rect width="100%" height="100%" stroke="black" fill="transparent" />
+    <!-- <rect width="100%" height="100%" stroke="black" fill="transparent" /> -->
   </svg>
 </template>
 
@@ -72,7 +72,6 @@
     },
     computed: {
       radius: function () {
-        console.log(this.width / 9);
         return this.width / 9;
       },
       height: function () {
